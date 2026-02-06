@@ -1,0 +1,31 @@
+.flex-container {
+	display: flex;
+	border: 2px solid black;
+	padding: 10px;
+	flex-wrap: wrap-reverse;
+}
+.flex-item {
+	flex: 1;
+	padding: 20px;
+	margin: 5px;
+	background-color: lightblue;
+	border: 1px solid darkblue;
+	text-align: center;
+}
+.flex-item img {
+ width: 150px;
+ height: 150px;
+ display: block;
+ margin: 0 auto 10px;
+}
+
+.flex-item:nth-child(1) {
+	order: 3;
+}
+.flex-item:nth-child(2) {
+	order: 1;
+	flex: 4;
+}
+.flex-item:nth-child(3) {
+	order: 2;
+}
